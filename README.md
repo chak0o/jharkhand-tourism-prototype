@@ -11,7 +11,6 @@
       background: linear-gradient(to bottom, #f4f4f9, #dbe6f2);
       color: #333;
     }
-
     header {
       background: linear-gradient(135deg, #2c3e50, #3498db);
       color: white;
@@ -19,7 +18,6 @@
       text-align: center;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-
     section {
       padding: 2em;
       background: #ffffffcc;
@@ -28,12 +26,10 @@
       max-width: 1000px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-
     h2 {
       color: #e67e22;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     }
-
     .map-container {
       position: relative;
       display: flex;
@@ -43,13 +39,11 @@
       border-radius: 12px;
       overflow: hidden;
     }
-
     .map-container img {
       max-width: 100%;
       border-radius: 8px;
       filter: brightness(1.1);
     }
-
     .pin {
       position: absolute;
       width: 16px;
@@ -60,18 +54,15 @@
       cursor: pointer;
       transition: transform 0.2s, box-shadow 0.2s;
     }
-
     .pin:hover {
       transform: scale(1.5);
       box-shadow: 0 0 10px #e74c3c;
     }
-
     .search-bar {
       display: flex;
       justify-content: center;
       margin-bottom: 1.5em;
     }
-
     .search-bar input {
       width: 50%;
       padding: 0.8em;
@@ -81,12 +72,10 @@
       outline: none;
       transition: all 0.3s;
     }
-
     .search-bar input:focus {
       border-color: #3498db;
       box-shadow: 0 0 8px #3498db;
     }
-
     .search-bar button {
       padding: 0.8em 1.5em;
       border-radius: 25px;
@@ -96,17 +85,14 @@
       cursor: pointer;
       transition: all 0.3s;
     }
-
     .search-bar button:hover {
       background: linear-gradient(to right, #6dd5fa, #2980b9);
     }
-
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.5em;
     }
-
     .card {
       background: linear-gradient(to bottom, #ffffff, #f1f8ff);
       padding: 1em;
@@ -114,27 +100,22 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform 0.2s, box-shadow 0.2s;
     }
-
     .card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
-
     .chat-box {
       background: #fefefe;
       padding: 1em;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-
     .channel h4 {
       color: #16a085;
     }
-
     .chat-message strong {
       color: #2980b9;
     }
-
     /* AI Chatbot */
     #chatbot {
       padding: 40px;
@@ -144,7 +125,6 @@
       max-width: 800px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-
     .chat-container {
       border: 1px solid #ccc;
       border-radius: 10px;
@@ -155,7 +135,6 @@
       display: flex;
       flex-direction: column;
     }
-
     .chat-box-inner {
       max-height: 250px;
       overflow-y: auto;
@@ -163,37 +142,31 @@
       display: flex;
       flex-direction: column;
     }
-
     .message {
       padding: 10px;
       margin: 8px 0;
       border-radius: 8px;
       max-width: 75%;
     }
-
     .message.bot {
       background: #e1f0ff;
       align-self: flex-start;
     }
-
     .message.user {
       background: #d1ffd6;
       align-self: flex-end;
       margin-left: auto;
     }
-
     .chat-input {
       display: flex;
       gap: 10px;
     }
-
     .chat-input input {
       flex: 1;
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 6px;
     }
-
     .chat-input button {
       padding: 10px 20px;
       background: #007bff;
@@ -202,7 +175,6 @@
       border-radius: 6px;
       cursor: pointer;
     }
-
     /* Center Personal Dashboard Section */
     #dashboard {
       padding: 40px;
@@ -213,13 +185,11 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
       text-align: center;
     }
-
     #dashboard img {
       display: block;
       margin: 20px auto;
       border-radius: 12px;
     }
-
     #dashboard ul {
       list-style: none;
       padding: 0;
@@ -227,13 +197,11 @@
       display: inline-block;
       text-align: left;
     }
-
     #dashboard ul li {
       margin: 10px 0;
       padding-left: 1em;
       position: relative;
     }
-
     #dashboard ul li::before {
       content: "✔";
       color: #e67e22;
