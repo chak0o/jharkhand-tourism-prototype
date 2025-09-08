@@ -120,21 +120,6 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
-    .chat-box {
-      background: #fefefe;
-      padding: 1em;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    .channel h4 {
-      color: #16a085;
-    }
-
-    .chat-message strong {
-      color: #2980b9;
-    }
-
     /* AI Chatbot */
     #chatbot {
       padding: 40px;
@@ -203,7 +188,7 @@
       cursor: pointer;
     }
 
-    /* Center Personal Dashboard Section */
+    /* Dashboard */
     #dashboard {
       padding: 40px;
       background: linear-gradient(to right, #fff0f5, #ffe4e1);
@@ -256,18 +241,6 @@
       <input type="text" placeholder="Search for places...">
       <button>Search</button>
     </div>
-    <div style="text-align:center; margin-top:1.5em;">
-      <h3>Most Searched</h3>
-      <ul style="list-style:none; padding:0; display:inline-block; text-align:left;">
-        <li>Hundru Falls</li>
-        <li>Dassam Falls</li>
-        <li>Netarhat</li>
-        <li>Deoghar Temple</li>
-        <li>Betla National Park</li>
-        <li>Patratu Valley</li>
-        <li>Parasnath Hills</li>
-      </ul>
-    </div>
   </section>
 
   <!-- Map Section -->
@@ -283,7 +256,7 @@
     </div>
   </section>
 
-  <!-- AI Chatbot Section -->
+  <!-- AI Chatbot -->
   <section id="chatbot">
     <h2>🤖 AI Travel Assistant</h2>
     <p>Meet our AI-powered assistant! It helps tourists with guidance, answers questions, and provides quick tips for emergencies. (Prototype only)</p>
@@ -301,66 +274,50 @@
   <!-- Emergency Section -->
   <section id="emergency">
     <h2>Emergency Contacts</h2>
-    <p>If you face any difficulty during your travel in Jharkhand, these emergency helplines are available 24/7. Save them before you begin your journey.</p>
     <div class="grid">
       <div class="card">
         <h3>Police Helpline</h3>
-        <p>Dial 100 for immediate police assistance in case of theft, assault, missing persons, or unsafe situations.</p>
+        <p>Dial 100 for immediate assistance.</p>
       </div>
       <div class="card">
         <h3>Ambulance</h3>
-        <p>Dial 108 for medical emergencies. Trained paramedics and ambulances are available across Jharkhand 24/7.</p>
+        <p>Dial 108 for medical emergencies.</p>
       </div>
       <div class="card">
         <h3>Women’s Helpline</h3>
-        <p>Dial 181 to seek urgent help in cases of harassment, abuse, or unsafe environments.</p>
+        <p>Dial 181 for urgent help.</p>
       </div>
       <div class="card">
         <h3>Child Helpline</h3>
-        <p>Dial 1098 if you see a child in distress, lost, or in need of urgent care.</p>
+        <p>Dial 1098 for children in distress.</p>
       </div>
     </div>
   </section>
 
-  <!-- Recommendations Section -->
+  <!-- Recommendations -->
   <section id="recommendations">
     <h2>Top Recommendations</h2>
-    <p>Jharkhand is full of mesmerizing natural beauty, temples, forests, and cultural experiences. Here are some must-visit destinations for tourists:</p>
     <div class="grid">
-      <div class="card">
-        <h3>Hundru Falls</h3>
-        <p>Breathtaking waterfall and lush greenery.</p>
-      </div>
-      <div class="card">
-        <h3>Dassam Falls</h3>
-        <p>Perfect for nature lovers and photographers.</p>
-      </div>
-      <div class="card">
-        <h3>Netarhat</h3>
-        <p>Known as the ‘Queen of Chotanagpur’.</p>
-      </div>
-      <div class="card">
-        <h3>Deoghar</h3>
-        <p>Baba Baidyanath Temple, one of the twelve Jyotirlingas in India.</p>
-      </div>
+      <div class="card"><h3>Hundru Falls</h3><p>Breathtaking waterfall.</p></div>
+      <div class="card"><h3>Dassam Falls</h3><p>Perfect for nature lovers.</p></div>
+      <div class="card"><h3>Netarhat</h3><p>The ‘Queen of Chotanagpur’.</p></div>
+      <div class="card"><h3>Deoghar</h3><p>Baba Baidyanath Temple.</p></div>
     </div>
   </section>
 
-  <!-- Personal Dashboard -->
+  <!-- Dashboard -->
   <section id="dashboard">
     <h2>Plan Your Trip</h2>
-    <p>Personal dashboard to plan your travel route, expenses, and trip settings.</p>
     <img src="images.jpg" alt="Jharkhand Map">
     <ul>
-      <li>Plan your route across Jharkhand.</li>
-      <li>Estimate budget for travel and stay.</li>
-      <li>Save trips as Public or Private.</li>
-      <li>Edit, update, or share your trip with others.</li>
-      <li>Upload your trip map for others to see possible routes.</li>
+      <li>Plan your route</li>
+      <li>Estimate budget</li>
+      <li>Save trips</li>
+      <li>Edit/share trips</li>
     </ul>
   </section>
 
-  <!-- JavaScript for chatbot -->
+  <!-- JS for chatbot -->
   <script>
     const chatBox = document.getElementById("chatBox");
     const input = document.getElementById("chatInput");
@@ -379,15 +336,10 @@
       if(text) {
         addMessage(text, "user");
         input.value = "";
-
-        // Simulated bot reply
         setTimeout(() => {
           let reply = "I’m still a demo 🤖, but I’ll soon be able to answer!";
-          if(text.toLowerCase().includes("waterfall")) {
-            reply = "You should visit Dassam Falls or Hundru Falls!";
-          } else if(text.toLowerCase().includes("temple")) {
-            reply = "Deoghar Temple is one of the best spiritual places to visit.";
-          }
+          if(text.toLowerCase().includes("waterfall")) reply = "Visit Dassam or Hundru Falls!";
+          else if(text.toLowerCase().includes("temple")) reply = "Deoghar Temple is amazing!";
           addMessage(reply, "bot");
         }, 1000);
       }
