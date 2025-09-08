@@ -90,8 +90,72 @@
       border-bottom: 1px solid #ddd;
     }
     .chat-message strong {
-      color: #2c3e50;
+      color: #2c3e50; 
     }
+    /* AI Chatbot Section */
+#chatbot {
+  padding: 40px;
+  background: #f7f9fc;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.chat-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  padding: 15px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.chat-box {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.message {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  max-width: 75%;
+}
+
+.message.bot {
+  background: #e1f0ff;
+  align-self: flex-start;
+}
+
+.message.user {
+  background: #d1ffd6;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: not-allowed; /* disabled for prototype */
+}
+
   </style>
 </head>
 <body>
@@ -135,6 +199,28 @@
       <div class="pin" style="top:25%;left:65%;" title="Deoghar"></div>
     </div>
   </section>
+
+  <!-- AI Chatbot Section -->
+<section id="chatbot">
+  <h2>🤖 AI Travel Assistant</h2>
+  <p>
+    Meet our AI-powered assistant! It helps tourists with guidance, answers questions,
+    and provides quick tips for emergencies. (Prototype only)
+  </p>
+
+  <div class="chat-container">
+    <div class="chat-box">
+      <div class="message bot">👋 Hello! I’m your Jharkhand Travel Assistant. How can I help you today?</div>
+      <div class="message user">Hi! Can you recommend me a waterfall to visit?</div>
+      <div class="message bot">💡 Sure! You can visit *Hundru Falls*, one of the most famous waterfalls in Jharkhand.</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type your message here..." disabled>
+      <button disabled>Send</button>
+    </div>
+  </div>
+</section>
+
 
 <!-- Emergency Section -->
 <section id="emergency">
